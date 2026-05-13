@@ -1,0 +1,32 @@
+{
+    "name": "leadingedge/payhere-laravel",
+    "description": "Laravel package for PayHere payment gateway - Sri Lanka",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Trishan",
+            "email": "your@email.com",
+            "homepage": "https://leadingedgesolutions.lk"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^9.0|^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LeadingEdge\\PayHere\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LeadingEdge\\PayHere\\PayHereServiceProvider"
+            ],
+            "aliases": {
+                "PayHere": "LeadingEdge\\PayHere\\PayHere"
+            }
+        }
+    }
+}
